@@ -1,0 +1,137 @@
+[gd_scene load_steps=25 format=3 uid="uid://d3vqkkaj6a8yr"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="1_h3bgd"]
+[ext_resource type="Texture2D" uid="uid://dfkj144rgn6a0" path="res://addons/Stranger Forest Files/Player/Sprites/idle/idle.png" id="1_jo5ui"]
+[ext_resource type="Texture2D" uid="uid://1lswobtelpi6" path="res://addons/Stranger Forest Files/Player/Sprites/idle/idle_down.png" id="2_bpv8n"]
+[ext_resource type="Texture2D" uid="uid://iqdypage8cbi" path="res://addons/Stranger Forest Files/Player/Sprites/idle/idle_up.png" id="3_agnm5"]
+[ext_resource type="Texture2D" uid="uid://cok4pqxkppqac" path="res://addons/Stranger Forest Files/Player/Sprites/walking/walking1.png" id="4_sibvu"]
+[ext_resource type="Texture2D" uid="uid://b2or2kab2qf4j" path="res://addons/Stranger Forest Files/Player/Sprites/walking/walking2.png" id="5_a3sx0"]
+[ext_resource type="Texture2D" uid="uid://0kenbsgy0187" path="res://addons/Stranger Forest Files/Player/Sprites/walking/walking3.png" id="6_o6tkt"]
+[ext_resource type="Texture2D" uid="uid://pktdnqypcr40" path="res://addons/Stranger Forest Files/Player/Sprites/walking/walking4.png" id="7_l4y7w"]
+[ext_resource type="Texture2D" uid="uid://b6jg1ael47i8q" path="res://addons/Stranger Forest Files/Player/Sprites/walking/walking5.png" id="8_h076j"]
+[ext_resource type="Texture2D" uid="uid://d123hsmcy0e6e" path="res://addons/Stranger Forest Files/Player/Sprites/walking/walking6.png" id="9_5xoxn"]
+[ext_resource type="Texture2D" uid="uid://v8a3c5kt8vw5" path="res://addons/Stranger Forest Files/Player/Sprites/walking_down/walking_down1.png" id="10_mjvad"]
+[ext_resource type="Texture2D" uid="uid://darfycnro0wbt" path="res://addons/Stranger Forest Files/Player/Sprites/walking_down/walking_down2.png" id="11_l8s55"]
+[ext_resource type="Texture2D" uid="uid://cwnpp8diw2a0f" path="res://addons/Stranger Forest Files/Player/Sprites/walking_down/walking_down3.png" id="12_qq8qa"]
+[ext_resource type="Texture2D" uid="uid://coggs5f4kc17m" path="res://addons/Stranger Forest Files/Player/Sprites/walking_down/walking_down4.png" id="13_0aj2l"]
+[ext_resource type="Texture2D" uid="uid://016yrco1cx72" path="res://addons/Stranger Forest Files/Player/Sprites/walking_down/walking_down5.png" id="14_778hl"]
+[ext_resource type="Texture2D" uid="uid://c44k4fejur072" path="res://addons/Stranger Forest Files/Player/Sprites/walking_down/walking_down6.png" id="15_ddrag"]
+[ext_resource type="Texture2D" uid="uid://c0sh17wnhnusw" path="res://addons/Stranger Forest Files/Player/Sprites/walking up/walking_up1.png" id="16_si877"]
+[ext_resource type="Texture2D" uid="uid://rkbseegnuh58" path="res://addons/Stranger Forest Files/Player/Sprites/walking up/walking_up2.png" id="17_tojgf"]
+[ext_resource type="Texture2D" uid="uid://br5odjf3t4e1l" path="res://addons/Stranger Forest Files/Player/Sprites/walking up/walking_up3.png" id="18_pfg4c"]
+[ext_resource type="Texture2D" uid="uid://b8f3gwhffctfx" path="res://addons/Stranger Forest Files/Player/Sprites/walking up/walking_up4.png" id="19_0ovgl"]
+[ext_resource type="Texture2D" uid="uid://ba6bpl84ugeuf" path="res://addons/Stranger Forest Files/Player/Sprites/walking up/walking_up5.png" id="20_5tr3w"]
+[ext_resource type="Texture2D" uid="uid://sib1f8w5a743" path="res://addons/Stranger Forest Files/Player/Sprites/walking up/walking_up6.png" id="21_ny0uk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vfcjv"]
+size = Vector2(16, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qwngd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jo5ui")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_bpv8n")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_agnm5")
+}],
+"loop": true,
+"name": &"idle_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_sibvu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a3sx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_o6tkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_l4y7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h076j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5xoxn")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_mjvad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_l8s55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_qq8qa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0aj2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_778hl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ddrag")
+}],
+"loop": true,
+"name": &"walking_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_si877")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tojgf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_pfg4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_0ovgl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_5tr3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ny0uk")
+}],
+"loop": true,
+"name": &"walking_up",
+"speed": 5.0
+}]
+
+[node name="player" type="CharacterBody2D"]
+position = Vector2(139, 128)
+scale = Vector2(3, 3)
+script = ExtResource("1_h3bgd")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0.5)
+shape = SubResource("RectangleShape2D_vfcjv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qwngd")
+animation = &"walking"
