@@ -2,9 +2,14 @@ extends CharacterBody2D
 
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 
-@export var speed = 300
+@export var speed = 250
 var is_moving = false
 var direction = ""
+
+func _ready():
+	# Configurar el estado inicial del jugador
+	anim.play("idle_down")
+	anim.flip_h = false
 
 func _process(delta):
 	var input_velocity = Vector2.ZERO
@@ -34,6 +39,7 @@ func _process(delta):
 	
 	# Control de animaciones
 	if is_moving:
+		# Animaciones según la dirección
 		if direction == "move_left":
 			anim.play("walking")
 			anim.flip_h = true
@@ -44,7 +50,7 @@ func _process(delta):
 			anim.play("walking_up")
 		elif direction == "move_down":
 			anim.play("walking_down")
-	else:
+	else:	
 		# Animación de "idle" según la última dirección
 		if direction == "move_left":
 			anim.play("idle")
