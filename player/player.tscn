@@ -123,7 +123,7 @@ animations = [{
 }]
 
 [node name="player" type="CharacterBody2D"]
-position = Vector2(139, 128)
+position = Vector2(200, 124)
 scale = Vector2(3, 3)
 script = ExtResource("1_h3bgd")
 metadata/_edit_group_ = true
@@ -133,6 +133,7 @@ position = Vector2(-1, 0.5)
 shape = SubResource("RectangleShape2D_vfcjv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_qwngd")
-animation = &"walking_up"
-frame_progress = 0.0986309
+animation = &"idle"
+frame_progress = 0.897648
