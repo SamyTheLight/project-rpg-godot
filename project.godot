@@ -26,8 +26,8 @@ window/stretch/mode="viewport"
 
 folder_colors={
 "res://addons/": "orange",
-"res://player/": "blue",
-"res://world/": "green"
+"res://scenes/": "blue",
+"res://scripts/": "purple"
 }
 
 [input]

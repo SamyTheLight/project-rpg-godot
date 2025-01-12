@@ -7,14 +7,13 @@ var is_moving = false
 var direction = ""
 
 func _ready():
-	# Configurar el estado inicial del jugador
+	# Configure initial state of player
 	anim.play("idle_down")
 	anim.flip_h = false
 
 func _process(delta):
 	var input_velocity = Vector2.ZERO
 	
-	# Detectar entradas de movimiento acumulativamente
 	if Input.is_action_pressed("move_left"):
 		input_velocity.x -= 1
 		direction = "move_left"
@@ -23,23 +22,22 @@ func _process(delta):
 		direction = "move_right"
 	if Input.is_action_pressed("move_up"):
 		input_velocity.y -= 1
-		if input_velocity.x == 0:  # Priorizar horizontal sobre vertical
+		if input_velocity.x == 0:
 			direction = "move_up"
 	if Input.is_action_pressed("move_down"):
 		input_velocity.y += 1
-		if input_velocity.x == 0:  # Priorizar horizontal sobre vertical
+		if input_velocity.x == 0:
 			direction = "move_down"
 	
-	# Determinar si el personaje está en movimiento
+	# Determine if character is moving
 	is_moving = input_velocity != Vector2.ZERO
 	
-	# Normalizar velocidad y asignar a la propiedad "velocity"
+	# Normalize velocity and assign to propiety velocity
 	velocity = input_velocity.normalized() * speed
 	move_and_slide()
 	
-	# Control de animaciones
+	# Animation control
 	if is_moving:
-		# Animaciones según la dirección
 		if direction == "move_left":
 			anim.play("walking")
 			anim.flip_h = true
@@ -51,7 +49,7 @@ func _process(delta):
 		elif direction == "move_down":
 			anim.play("walking_down")
 	else:	
-		# Animación de "idle" según la última dirección
+		# Idle animation according to the last direction
 		if direction == "move_left":
 			anim.play("idle")
 			anim.flip_h = true
