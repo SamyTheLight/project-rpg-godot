@@ -432,3 +432,12 @@ position = Vector2(-1.00001, -8)
 sprite_frames = SubResource("SpriteFrames_qwngd")
 animation = &"death"
 frame_progress = 0.511829
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(5, 5)
+limit_left = 0
+limit_top = 0
+limit_right = 480
+limit_bottom = 220
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
