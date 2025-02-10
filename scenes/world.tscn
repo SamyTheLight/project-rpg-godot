@@ -276,6 +276,3 @@ z_index = 2
 position = Vector2(235, 116)
 scale = Vector2(1, 1)
 speed = 75
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(480, 145)
