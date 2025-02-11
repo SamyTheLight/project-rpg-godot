@@ -11,7 +11,7 @@ func _ready():
 	anim.play("idle_down")
 	anim.flip_h = false
 
-func _process(delta):
+func _process(_delta):
 	var input_velocity = Vector2.ZERO
 	
 	if Input.is_action_pressed("move_left"):
