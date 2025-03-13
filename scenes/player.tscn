@@ -414,7 +414,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xeigw"]
-size = Vector2(15, 10.6667)
+size = Vector2(13, 11)
 
 [node name="player" type="CharacterBody2D"]
 y_sort_enabled = true
@@ -432,7 +432,7 @@ animation = &"death"
 frame_progress = 0.511829
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.5, 3.66667)
+position = Vector2(0.5, 4.16665)
 shape = SubResource("RectangleShape2D_xeigw")
 
 [node name="Camera2D" type="Camera2D" parent="."]

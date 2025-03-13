@@ -60,3 +60,6 @@ func _process(_delta):
 			anim.play("idle_up")
 		elif direction == "move_down":
 			anim.play("idle_down")
+
+func player():
+	pass
