@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://rgaic1miaexa" path="res://addons/mystic_woods_sprites/tilesets/plains.png" id="2_glugr"]
 [ext_resource type="PackedScene" uid="uid://d3vqkkaj6a8yr" path="res://scenes/player.tscn" id="3_sdila"]
 [ext_resource type="Texture2D" uid="uid://csdardbw7as5d" path="res://addons/mystic_woods_sprites/objects/objects.png" id="4_8ufc1"]
-[ext_resource type="Script" path="res://scripts/world.gd" id="5_wvtvp"]
+[ext_resource type="Script" uid="uid://c1pe316n6gnl5" path="res://scripts/world.gd" id="5_wvtvp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vy1hb"]
 texture = ExtResource("1_h2ehd")
